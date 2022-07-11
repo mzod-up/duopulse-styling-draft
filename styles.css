@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+header {
+    /* Sticky header styles below, comment out/delete to disable */
+    /* position: sticky;
+    align-self: flex-start;
+    top: 0;
+    overflow-y: auto; */
+    /* Sticky header styles above, comment out/delete to disable */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+body {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 1000px; /* Just testing */
+    background-color: antiquewhite; /* Just for testing so that body is visible */
+    position: relative; /* Allows the footer to stay at the bottom of the page */
+}
+
+footer {
+    background-color: #274B59;
+    padding: 20px 5%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 115px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #0D0D0D;
+    margin-right: auto;
+    vertical-align: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block; /*instead of going top->down, they're displayed side by side*/
+    padding: 0 20px;
+}
+
+.nav-links li a{
+    color: #0D0D0D;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    transition: all 0.3s ease 0s;
+    color: #FD9A68;
+}
+
+.nav-links li a:active {
+    color: #FD9A68;
+}
+
+.nav-login-button {
+    background-color: #FD9A68;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 4px 2px 4px 20px;
+    cursor: pointer;
+}
+
+.nav-login-button:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #F5F5F5;
+}
+
+.footer-links {
+    list-style: none;
+    background-color: #274B59;
+}
+
+.footer-links li{
+    padding: 0 20px;
+    display: inline-block;
+    background-color: #274B59;
+}
+
+.footer-links li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    background-color: #274B59;
+}
+
+.download-links {
+    background-color: #274B59;
+    color: white;
+}
+
+.get-on {
+    vertical-align: center;
+    background-color: #274B59;
+    margin-left: 10px;
+}
+
+.logo-google-play, .logo-app-store {
+    vertical-align: bottom;
+    height: 62px;
+    width: auto;
+    margin: 5px 10px;
+    background-color: #274B59;
+    cursor: pointer;
+}
+
+/* Since header starts looking messy when width < 1125, we set up the media queries to make a responsive navbar
+(Styles TBA depending on whether responsive navbar will be implemented)*/
+
+@media screen and (max-width: 1125px) {
+    .nav-links {
+        display: none;
+    }
+}
